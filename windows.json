@@ -1,0 +1,40 @@
+{
+  "id": "windows",
+  "displayName": "test",
+  "url": "https://hpclabbatchaccount.northeurope.batch.azure.com/pools/windows",
+  "eTag": "0x8D5F7AF77C1B767",
+  "lastModified": "2018-08-01T13:05:34.331Z",
+  "creationTime": "2018-08-01T13:02:09.269Z",
+  "state": "active",
+  "stateTransitionTime": "2018-08-01T13:02:09.269Z",
+  "allocationState": "resizing",
+  "allocationStateTransitionTime": "2018-08-01T13:05:34.331Z",
+  "vmSize": "standard_a9",
+  "virtualMachineConfiguration": {
+    "imageReference": {
+      "publisher": "MicrosoftWindowsServer",
+      "offer": "WindowsServer",
+      "sku": "2016-Datacenter",
+      "version": "latest"
+    },
+    "nodeAgentSKUId": "batch.node.windows amd64"
+  },
+  "resizeTimeout": "PT15M",
+  "currentDedicatedNodes": 0,
+  "currentLowPriorityNodes": 0,
+  "targetDedicatedNodes": 2,
+  "targetLowPriorityNodes": 0,
+  "enableAutoScale": false,
+  "enableInterNodeCommunication": true,
+  "certificateReferences": [],
+  "maxTasksPerNode": 1,
+  "taskSchedulingPolicy": {
+    "nodeFillType": "Spread"
+  },
+  "userAccounts": [
+    {
+      "name": "thomas",
+      "elevationLevel": "admin"
+    }
+  ]
+}
